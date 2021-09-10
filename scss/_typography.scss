@@ -1,0 +1,103 @@
+%heading-25 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+}
+
+%heading-medium-25 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  letter-spacing: 0.1em;
+}
+
+%body-medium-25 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 29px;
+}
+
+%body-regular-25 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+}
+
+%body-bad-regular-25 {
+  font-family: "Bad Script";
+  font-size: 25px;
+  line-height: 35px;
+}
+
+%body-bad-regular-25-opacity {
+  font-family: "Bad Script";
+  font-size: 25px;
+  line-height: 35px;
+  opacity: 0.6;
+}
+
+%body-medium-20 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+%heading-16 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+}
+
+%body-bad-regular-14 {
+  font-family: "Bad Script";
+  font-size: 14px;
+  line-height: 20px;
+}
+
+%body-12 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+}
+
+%footer-12 {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  line-height: 18px;
+}
+
+%base-select {
+  text-align: center;
+  width: 310px;
+  height: 70px;
+  margin-bottom: 35px;
+  border-radius: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(228, 228, 228, 0.9) -6.2%,
+    rgba(203, 203, 203, 0.9) 100%
+  );
+
+  @media (max-width: 576px) {
+    width: 180px;
+    height: 40px;
+  }
+}
+
+%flex-align {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

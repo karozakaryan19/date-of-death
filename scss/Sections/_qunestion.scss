@@ -1,0 +1,131 @@
+.question {
+  padding: 64px 0 69px;
+  @extend %flex-align;
+  @media (max-width: 576px) {
+    padding: 37px 0 40px;
+  }
+
+  &__imgblock {
+    position: relative;
+    width: 100%;
+    @extend %flex-center;
+    // background-position: center;
+    // background-image: url("../../assets/bg2.png");
+    // background-repeat: no-repeat;
+    // @media (max-width: 576px) {
+    //   background-image: url("../../assets/bg2-small.png");
+    // }
+    &__img_border {
+      max-width: 345px;
+      height: 345px;
+      @media (max-width: 576px) {
+        max-width: 198px;
+        height: 198px;
+      }
+    }
+    &__img {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      max-width: 218px;
+      width: 100%;
+      height: 218px;
+      @media (max-width: 576px) {
+        max-width: 117px;
+        height: 117px;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+
+    p {
+      @extend %heading-medium-25;
+      text-align: center;
+      color: $yellow;
+      @media (max-width: 576px) {
+        font-size: 16px;
+        max-width: 288px;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+
+    &__btn {
+      @include button(310px, 70px, yellowAnima, $btn-background-yellow);
+      @media (max-width: 576px) {
+        width: 180px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__prediction {
+    @extend %heading-16;
+    color: $rgba-white;
+  }
+
+  &__secrecy {
+    margin-top: 120px;
+    max-width: 443px;
+    width: 100%;
+    padding: 128px 38px 84px;
+    border-radius: 3px;
+    border: 1px solid $white;
+    position: relative;
+    @media (max-width: 576px) {
+      margin-top: 113px;
+      max-width: 252px;
+      padding: 70px 22px 24px;
+    }
+
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 576px) {
+        width: 78px;
+        height: 78px;
+      }
+    }
+
+    &__text {
+      @extend %body-regular-25;
+      color: $white;
+      text-align: center;
+      @media (max-width: 576px) {
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      span {
+        color: $yellow;
+      }
+    }
+  }
+}
+
+.background {
+  background-position: center center;
+  background-image: url("../../assets/background.png");
+  width: 100%;
+  height: 940px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @media (max-width: 576px) {
+    background-position: 65%, top;
+    height: 500px;
+  }
+}

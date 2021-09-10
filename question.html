@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./assets/planet.png" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="question_step">
+          <div class="question_step__head">
+            <p class="question_step__head__text">
+              Мы расскажем Вам не только подробности вашей смерти, но также
+              поможем Вам избежать этой ужасной даты и продлить вашу жизнь на
+              многие годы.
+            </p>
+            <div class="question_step__head__tooltip">
+              <p class="question_step__head__tooltip__text"></p>
+            </div>
+          </div>
+          <form class="form" action="" method="post" id="formData">
+            <p class="form__question">
+              Когда Вы чувствуете себя наиболее комфортно?
+            </p>
+            <div class="form__answers form__answers_active" data-step="0">
+              <button type="button" class="form__answers__btn">Утро</button>
+              <button type="button" class="form__answers__btn">День</button>
+              <button type="button" class="form__answers__btn">Вечер</button>
+              <button type="button" class="form__answers__btn">Ночь</button>
+            </div>
+            <div class="form__answers" data-step="1">
+              <select id="selectDay" class="form__answers__select">
+                <option selected hidden>День</option>
+              </select>
+              <select id="selectMonth" class="form__answers__select">
+                <option selected hidden>Месяц</option>
+              </select>
+              <select id="selectYear" class="form__answers__select">
+                <option selected hidden>Год</option>
+              </select>
+              <button class="form__answers__btn">Далее</button>
+            </div>
+            <div class="loader" data-step="2">
+              <div class="loader-spinner"></div>
+              <p>Loading</p>
+            </div>
+            <div class="form__answers" data-step="2">
+              <button type="button" class="form__answers__btn">Да</button>
+              <button type="button" class="form__answers__btn">Нет</button>
+              <button type="button" class="form__answers__btn">никогда</button>
+            </div>
+            <div class="form__answers" data-step="3">
+              <button type="button" class="form__answers__btn">Да</button>
+              <button type="button" class="form__answers__btn">
+                Затрудняюсь ответить
+              </button>
+            </div>
+            <div class="recorting">
+              <div class="recorting__block">
+                <div class="recorting__loading"></div>
+                <p class="recorting__percent"><span></span>%</p>
+                <p class="recorting__title">Запись сообщения</p>
+              </div>
+            </div>
+          </form>
+          <div class="question_step__floor">
+            <p class="question_step__floor__text">
+              Вопрос <span class="active-step">2</span>-5
+            </p>
+          </div>
+        </div>
+
+        <!-- finish -->
+        <div class="date_death">
+          <div class="date_death__tooltip">
+            <p class="date_death__tooltip__text">
+              Спасибо за Ваши ответы!
+              <span>
+                Мы подготовили для Вас персональную аудио запись с Вашим
+                прогнозом.
+              </span>
+            </p>
+          </div>
+          <p class="date_death__text">
+            Вы можете узнать, как повлиять на события, которые ожидают вас в
+            ближайшем будущем.
+          </p>
+          <div class="date_death__date">
+            <p class="date_death__date__text">
+              ПЕРВОЕ ЗНАЧИМОЕ СОБЫТИЕ МОЖЕТ ПРОИЗОЙТИ УЖЕ 14.02.2021, Вам надо
+              быть готовым, что бы последствия не оказались необратимыми.
+            </p>
+          </div>
+          <p class="date_death__text">
+            Нажмите на кнопку ниже прямо сейчас и наберите наш номер телефона.
+            Прослушайте важную информацию!
+          </p>
+          <button class="callbtn">Позвонить и прослушать</button>
+          <div class="date_death__footer">
+            <p class="date_death__footer__text">
+              TERMENI SI CONDITII: ACESTA ESTE UN SERVICIU DE DIVERTISMENT. PRIN
+              FOLOSIREA LUI DECLARATI CA AVETI 18 ANI IMPLINITI
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="modal">
+        <div class="modal__wrapper">
+          <a href="/"><button class="modal__btn">Главная Страница</button></a>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

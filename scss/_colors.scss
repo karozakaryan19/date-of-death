@@ -1,0 +1,26 @@
+$rgba-line: rgba(255, 255, 255, 0.2);
+$rgba-white: rgba(255, 255, 255, 0.6);
+
+$grey: #9d9d9d;
+$white: #ffffff;
+$black: #202024;
+$yellow: #f6c866;
+
+$liner-grey: linear-gradient(
+  90deg,
+  rgba(228, 228, 228, 0.9) -6.2%,
+  rgba(203, 203, 203, 0.9) 100%
+);
+
+$btn-background-yellow: linear-gradient(
+  45deg,
+  rgba(252, 158, 27, 0.9) -6.2%,
+  rgba(270, 229, 172, 0.9) 30%,
+  rgba(254, 173, 53, 0.9) 100%
+);
+$btn-background-green: linear-gradient(
+  45deg,
+  rgba(76, 217, 100, 0.9) -6.2%,
+  rgba(233, 255, 220, 0.9) 30%,
+  rgba(50, 185, 73, 0.9) 100%
+);

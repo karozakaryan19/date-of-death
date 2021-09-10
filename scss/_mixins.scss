@@ -1,0 +1,105 @@
+@mixin yellowbtnAnima($percent) {
+  background: linear-gradient(
+    45deg,
+    rgba(252, 158, 27, 0.9) -6.2%,
+    rgba(270, 229, 172, 0.9) $percent,
+    rgba(254, 173, 53, 0.9) 100%
+  );
+}
+
+@mixin greenbtnAnima($percent) {
+  background: linear-gradient(
+    45deg,
+    rgba(76, 217, 100, 0.9) -6.2%,
+    rgba(186, 245, 152, 0.9) $percent,
+    rgba(50, 185, 73, 0.9) 100%
+  );
+}
+
+@mixin button($width, $height, $animate-name, $background) {
+  width: $width;
+  height: $height;
+  background: $background;
+  border-radius: 50px;
+  color: white;
+  @extend %body-medium-20;
+  margin-bottom: 35px;
+  animation: $animate-name 1s linear infinite;
+
+  @media (max-width: 576px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@keyframes yellowAnima {
+  0% {
+    @include yellowbtnAnima(30%);
+  }
+  10% {
+    @include yellowbtnAnima(38%);
+  }
+  20% {
+    @include yellowbtnAnima(46%);
+  }
+  30% {
+    @include yellowbtnAnima(54%);
+  }
+  40% {
+    @include yellowbtnAnima(62%);
+  }
+  50% {
+    @include yellowbtnAnima(70%);
+  }
+  60% {
+    @include yellowbtnAnima(78%);
+  }
+  70% {
+    @include yellowbtnAnima(86%);
+  }
+  80% {
+    @include yellowbtnAnima(90%);
+  }
+  90% {
+    @include yellowbtnAnima(95%);
+  }
+  100% {
+    @include yellowbtnAnima(100%);
+  }
+}
+
+@keyframes greenAnima {
+  0% {
+    @include greenbtnAnima(30%);
+  }
+  10% {
+    @include greenbtnAnima(38%);
+  }
+  20% {
+    @include greenbtnAnima(46%);
+  }
+  30% {
+    @include greenbtnAnima(54%);
+  }
+  40% {
+    @include greenbtnAnima(62%);
+  }
+  50% {
+    @include greenbtnAnima(70%);
+  }
+  60% {
+    @include greenbtnAnima(78%);
+  }
+  70% {
+    @include greenbtnAnima(86%);
+  }
+  80% {
+    @include greenbtnAnima(90%);
+  }
+  90% {
+    @include greenbtnAnima(95%);
+  }
+  100% {
+    @include greenbtnAnima(100%);
+  }
+}

@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  color: $rgba-white;
+  border-bottom: 1px solid $rgba-line;
+  padding: 15px 0 11px 0;
+
+  &__title {
+    @extend %heading-16;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__subtitle {
+    color: $rgba-white;
+    text-align: center;
+    padding-top: 12px;
+    @extend %heading-25;
+
+    @media (max-width: 576px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+}

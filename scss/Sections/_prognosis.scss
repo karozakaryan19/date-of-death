@@ -1,0 +1,126 @@
+.prognosis {
+  position: relative;
+
+  @extend %flex-align;
+
+  &__sunset {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    background-image: url("../../assets/bg4.png");
+    width: 100%;
+    height: 606px;
+    position: relative;
+    @media (max-width: 576px) {
+      height: 331px;
+      background-position: 30%;
+    }
+
+    &__text {
+      max-width: 380px;
+      text-align: center;
+      @extend %body-regular-25;
+      color: $white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 576px) {
+        max-width: 219px;
+        font-size: 16px;
+        line-height: 25px;
+      }
+
+      span {
+        color: yellow;
+      }
+    }
+  }
+
+  &__question {
+    margin-top: 86px;
+    @media (max-width: 576px) {
+      margin-top: 53px;
+    }
+
+    &__title {
+      text-align: center;
+      color: $yellow;
+      text-transform: uppercase;
+      @extend %body-medium-25;
+      padding: 47px 0;
+      @media (max-width: 576px) {
+        padding: 0 0 27px 0;
+        font-size: 16px;
+        line-height: 19px;
+      }
+    }
+
+    &__buttons {
+      @extend %flex-align;
+
+      &__btn {
+        @include button(310px, 70px, yellowAnima, $btn-background-yellow);
+        @media (max-width: 576px) {
+          width: 180px;
+          height: 40px;
+        }
+      }
+    }
+
+    &__quantity {
+      color: $rgba-white;
+      @extend %heading-16;
+      text-align: center;
+    }
+  }
+
+  &__warning {
+    width: 100%;
+    @extend %flex-align;
+
+    &__text {
+      text-align: center;
+      color: $white;
+      @extend %body-bad-regular-25;
+      max-width: 310px;
+      width: 100%;
+
+      @media (max-width: 576px) {
+        font-size: 20px;
+        line-height: 28px;
+        max-width: 235px;
+      }
+    }
+
+    &__eye {
+      width: 100%;
+      height: 203px;
+      @extend %flex-center;
+
+      background-image: url("../../assets/eye.png");
+      background-repeat: no-repeat;
+      background-position: right;
+      @media (max-width: 1440px) {
+        background-position: calc(100% + 70px) center;
+        height: 108px;
+        background-image: url("../../assets/eye-small.png");
+      }
+    }
+
+    &__planet {
+      width: 100%;
+      height: 230px;
+      @extend %flex-center;
+      background-image: url("../../assets/planet.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      @media (max-width: 1440px) {
+        background-position: calc(0% - 30px) center;
+        background-image: url("../../assets/planet-small.png");
+        height: 113px;
+      }
+    }
+  }
+}
